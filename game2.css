@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FDFFFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.game-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-text {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.color-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #ccc;
+}
+
+#answer-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+#draggable-container {
+    display: flex;
+    gap: 10px;
+}
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #AECD8C;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #9DC670;
+}
+
+/* 오른쪽 상단 스코어 표시 스타일 */
+.score-display {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #000;
+}
+.draggable-box {
+    width: 200px; 
+    height: 200px;
+    border-radius: 10px;
+    cursor: grab;
+    transition: all 0.2s;
+    margin: 10px;
+}
+
+button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #AECD8C;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9DC670;
+}

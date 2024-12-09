@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>치매 예방 게임</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="header">
+        <button id="home-button" class="home-button">시작화면</button>
+        <div id="score-display" class="score-display">점수: 0</div>
+    </div>
+    <div class="game-board">
+        <p class="main-text">두 번 나온 숫자를 찾아주세요!</p>
+        <table id="number-table" style="display: none;"></table>
+        <div id="inputs">
+            <input class="answer-input" type="number" placeholder="숫자 입력" />
+            <input class="answer-input" type="number" placeholder="숫자 입력" />
+            <input class="answer-input" type="number" placeholder="숫자 입력" />
+        </div>
+        <button class="check-button" onclick="checkAnswers()">완료</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

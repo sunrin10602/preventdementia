@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>치매 예방 게임</title>
+    <link rel="stylesheet" href="game1.css">
+</head>
+<body>
+    <div class="header">
+        <button id="home-button" class="home-button">시작화면</button>
+        <div id="score-display" class="score-display">점수: 0</div>
+    </div>
+    <div class="game-board">
+        <p class="main-text">글자의 색깔을 맞춰주세요!<br>
+            글자의 내용을 입력하지 않도록 주의!</p>
+        <p id="question"></p>
+        <div class="input-container">
+            <input type="text" id="answer" placeholder="색깔을 입력하세요" />
+            <button class="check-button" onclick="checkAnswer()">완료</button>
+        </div>
+    </div>
+    <script src="game1.js"></script>
+</body>
+</html>

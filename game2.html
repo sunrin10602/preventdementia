@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>치매 예방 게임</title>
+    <link rel="stylesheet" href="game2.css">
+</head>
+<body>
+    <div class="header">
+        <button id="home-button" class="home-button">시작화면</button>
+        <div id="score-display" class="score-display">점수: 0</div>
+    </div>
+    <div id="game-board">
+        <div class="main-text">네모의 색과 순서를 기억해뒀다가, 정답을 맞춰보세요!</div>
+        <div id="answer-screen" class="game-board">
+            <div class="color-box" id="box1"></div>
+            <div class="color-box" id="box2"></div>
+            <div class="color-box" id="box3"></div>
+        </div>
+        <div id="game-screen" class="game-board" style="display: none;">
+            <div id="draggable-container">
+                <div class="draggable-box" id="drag-box1" draggable="true"></div>
+                <div class="draggable-box" id="drag-box2" draggable="true"></div>
+                <div class="draggable-box" id="drag-box3" draggable="true"></div>
+            </div>
+            <button id="check-answer" class="check-button">정답 확인</button>
+        </div>
+    </div>
+    <script src="game2.js"></script>
+</body>
+</html>
